@@ -1,16 +1,18 @@
-server.port=8083
-spring.application.name=carlease-api
+server:
+  port: 8083
 
-spring.datasource.url= jdbc:mysql://localhost:3306/testdb?useSSL=false
-spring.datasource.username= root
-spring.datasource.password= password
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb?useSSL=false
+    username: root
+    password: password
 
-spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDialect
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+spring.application.name: carlease-api
+springdoc.api-docs.path: /api-docs
 
-
-springdoc.api-docs.path=/api-docs
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto: update
+spring.jpa.show-sql: true
 
 #spring.datasource.url=jdbc:h2:mem:testdb
 #spring.datasource.driverClassName=org.h2.Driver

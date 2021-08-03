@@ -1,0 +1,21 @@
+server:
+  port: 8999
+
+eureka:
+  instance:
+    hostname: localhost
+
+spring:
+    application:
+      name: api-gateway
+    cloud:
+      gateway:
+        routes:
+          - id: carlease-api
+            uri: lb://carlease-api
+            predicates:
+              - Path=/cars/**
+          - id: carlease-customer-api
+            uri: lb://carlease-customer-api
+            predicates:
+              - Path=/customers/**

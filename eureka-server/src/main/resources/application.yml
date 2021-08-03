@@ -1,9 +1,5 @@
 server:
   port: 8761
-#eureka.client.register-with-eureka=false
-#eureka.client.fetchRegistry=false
-#eureka.client.server.waitTimeInMsWhenSyncEmpty=0
-
 
 eureka:
   client:
@@ -11,7 +7,6 @@ eureka:
     fetchRegistry: false
     server:
       waitTimeInMsWhenSyncEmpty: 0
-
 
 #  server.port=8761
 #  eureka.client.register-with-eureka=false

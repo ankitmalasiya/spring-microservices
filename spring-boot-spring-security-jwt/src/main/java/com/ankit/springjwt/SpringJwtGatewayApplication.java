@@ -15,10 +15,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @EnableHystrixDashboard
-public class SpringBootSecurityJwtApplication {
+public class SpringJwtGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootSecurityJwtApplication.class, args);
+        SpringApplication.run(SpringJwtGatewayApplication.class, args);
     }
 
     @Bean
